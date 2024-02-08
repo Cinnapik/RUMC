@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+    margin: 0 0 0 0;
+}
+/*--------- header ---------*/
+.container_header{
+    max-width: auto;
+
+    height: 80px;
+    background-color: rgb(212, 212, 212);
+}
+#logo{
+    float: left;
+    height: 80px;
+    padding-left: 8%;
+    padding-top: 1.5%;
+    display:flex;
+}
+#logo a{
+    height:80px;
+    text-decoration: none; /* Устранение подчёркивания ссылок. */	
+    position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+    Color: black;
+    font-size: 25px;
+    
+}
+
+.container{
+    list-style: none; /*откл. маркеров*/
+    display:flex;
+    padding-top: 20px;
+   padding-left: 30%; 
+}
+.container li{
+   margin-right: 0px; /* создание отступов для того, чтобы не сливались пункты меню. */
+   font-family: Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
+   font-size: 20px; /* Размер текста в ссылках. */ 
+}
+  
+.container li a{
+    display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+	padding: 10px 30px;  /* Внутри блочные отступы. */
+	color: rgb(70, 69, 69); /* Цвет текста в блоках меню. */
+	text-decoration: none; /* Устранение подчёркивания ссылок. */
+	position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+  }
+/*--------- end header ---------*/
+/*--------- RYMC --------------*/
+#PYMC{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    background-color:aliceblue;
+    max-width: auto;
+    height: 400px;
+    color:black;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+/*--------- end RYMC --------------*/
