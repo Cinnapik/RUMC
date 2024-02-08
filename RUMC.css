@@ -341,7 +341,7 @@ footer {
     height: 100%;  
 }
 .grid-item .image {
-    height: 200px;
+    height: 300px;
     overflow: hidden;
 }
 .grid-item .info {
@@ -383,7 +383,7 @@ footer {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 14px;
+    bottom: 118px;
     left: 0;
     text-align: center;
 }
@@ -435,13 +435,16 @@ footer {
 /*--------------------------------*/
 
 .PYMC{
-    width: 100%;
-    background-color: #337AB7;
-    height: 500px;
-    background-color: grey;
+  background-image: url(/ICONS/offic.jpg);
+  background-size: 2180px 1055px;
+  background-position: center;
+  width: 100%;
+  background-color: #337AB7;
+  height: 500px;
+  background-color: grey;
 }
 .PYMC h1{
-    padding-top: 150px;
+    padding: 150px 20% 0px;
     margin:0;
     text-align: center;
 }
