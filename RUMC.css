@@ -12,8 +12,8 @@ body{
 #logo{
     float: left;
     height: 80px;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 30px;
+    padding-top: 24px;
     display:fixed;
 }
 #logo a{
@@ -22,7 +22,9 @@ body{
     position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
     Color: black;
     font-size: 25px;
-    
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 500;
+    transition: .5s;
 }
 
 .container{
@@ -34,7 +36,7 @@ body{
 .container li{
    margin-right: 0px; /* создание отступов для того, чтобы не сливались пункты меню. */
    font-family: Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
-   font-size: 20px; /* Размер текста в ссылках. */ 
+   font-size: 20px; /* Размер текста в ссылках. */
 }
   
 .container li a{
@@ -43,38 +45,159 @@ body{
 	color: rgb(70, 69, 69); /* Цвет текста в блоках меню. */
 	text-decoration: none; /* Устранение подчёркивания ссылок. */
 	position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
-  }
-  .menu{
+    transition: .5s;
+}
+.container li a:hover{
+    color:black;
+    font-size: 22px;
+}
+
+.menu{
     display: none;
 }
 /*--------- end header ---------*/
-/*--------- RYMC --------------*/
-#PYMC{
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    font-weight: 600;
+
+
+/*--------- Футор --------------*/
+footer {
+    position: relative; /*относительное позиционирование*/
+    height: 50%;
+    padding: 20px 50px; /*поля для контента*/
+    background: #262626; /*цвет футера*/
+    display: block;
+    margin-top: 100px; /*отступ сверху*/
+  }
+  .footer_menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+    flex-wrap: wrap;
+    padding-top: 35px; 
+  }
+  .menus {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 0;
+    margin-top: 30px;
+    padding-top: 35px;
+    flex-direction: column;
+  }
+  .social li{
+    list-style: none; /*удалить черные маркеры*/
+    padding-top:35px;
+  }
+  .footer_menu li {
+    list-style: none; /*удалить черные маркеры*/
+  }
+  .social li a {
+    font-size: 0.1px; /*размер иконок*/
+    color: white; /*цвет иконок*/
+    margin: 0 10px;
+    display: inline-block; /*отображать как строчно-блочный элемент*/
+    transition: 0.5s; /*плавный переход*/
+  }
+  .footer_menu li a {
+    font-size: 24px; /*размер ссылок меню*/
+    color: #fff; /*цвет ссылок меню*/
+    opacity: 0.75; /*значение прозрачности*/
+    margin: 0 10px;
+    text-decoration: none; /*ссылка без подчеркивания*/
+    display: inline-block;
+  }
+  .footer_menu li a:hover {
+    opacity: 1;
+  }
+  footer p {
+    color: #fff;
     text-align: center;
-    padding-top: 100px;
-    background-color:aliceblue;
-    max-width: auto;
-    height: 400px;
-    color:black;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-/*--------- end RYMC --------------*/
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+  
+  .menus li {
+    list-style: none; /*удалить черные маркеры*/
+    padding-top: 10px;
+  }
+  .menus li a {
+    font-size: 1.2em; /*размер ссылок меню*/
+    color: #fff; /*цвет ссылок меню*/
+    margin: 0 15px;
+    text-decoration: none; /*ссылка без подчеркивания*/
+    display: inline-block;
+  }
+  .menus li a:hover {
+    opacity: 1;
+  }
+  
+  #phone1{
+    position:relative;
+    overflow:hidden;
+    float:right;
+  }
+  
+  #phone2{
+    display: inline-table; 
+    height:300px;
+    margin-bottom: 50px; 
+    float:right;
+    padding-left: 100px;
+  }
+  
+  #phone3{
+    height: 380px;
+    width: 58%;
+    display: inline-block;
+  }
+  /*--------- end футор --------------*/
+
+  /*--------- Адаптация --------------*/
 @media screen and (max-width:1010px) {
     .container {
         display: none;
       
     }
 .menu{
-    width: 200px;
     color: black;
     border-radius: 15px;
     display: flex;
     position: relative;
     float: inline-end;
-    padding-top: 20px;
+    padding-top: 30px;
+    flex-direction: row-reverse;
 }
-    
+#phone1{
+    float: none;
 }
+#phone2{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    float: none;
+}
+#phone3{
+    width: unset;
+}
+.footer_menu{
+    display: block;
+    padding-top: 0px;
+}
+.menus{
+    margin-left: 0px;
+    display: inherit;
+}
+.footer{
+    height: 100%;
+}
+} 
+
+@media screen and (max-width:1317px) {
+    #phone2{
+        padding-left: 0;
+    }
+}
+/*--------- end Адаптация --------------*/
