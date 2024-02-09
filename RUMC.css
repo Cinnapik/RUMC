@@ -148,7 +148,7 @@ body{
   }
   
   #toggle:checked + .hamburger + .nav {
-    top: -20px;
+    top: -25px;
     transform: scale(1);
     transition: 0.2s;
   }
@@ -255,6 +255,7 @@ footer {
         display: none;
       
     }
+
     
 #phone1{
     float: none;
@@ -435,16 +436,26 @@ footer {
 /*--------------------------------*/
 
 .PYMC{
-  background-image: url(./ICONS/offic.jpg);
+  background-image: url(./ICONS/officee.jpg);
   background-size: 2180px 1055px;
   background-position: center;
   width: 100%;
-  background-color: #337AB7;
-  height: 500px;
+  height: 600px;
   background-color: grey;
+  background-attachment:fixed;
+  
 }
 .PYMC h1{
     padding: 150px 20% 0px;
     margin:0;
     text-align: center;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-shadow:4px -4px 10px rgb(212, 255, 221); color:rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(212, 255, 221) ;
+  font-size: 40px;
+}
+@media screen and (max-width:1010px) {
+  .PYMC h1{
+      font-size: 25px;
+  }
 }
