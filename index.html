@@ -9,18 +9,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
   </head>
 <body>
-    <div class="main">
             <div class="menu-function">
                 <div id="header" class="container_header"> 
                     <div id="logo" >
                         <a href="index.html">РУМЦ ЛГУ им. В.Даля</a>
                     </div>
+                    <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
                     <div class="container">
-                        <li><a href="#">Главная страница</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Главное меню ▼</button>
+                            <div class="dropdown-content">
+                              <a href="#">Ссылка 1</a>
+                              <a href="#">Ссылка 2</a>
+                              <a href="#">Ссылка 3</a>
+                            </div>
+                          </div>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="#">Документы</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Документы ▼</button>
+                            <div class="dropdown-content">
+                              <a href="#">Ссылка 1</a>
+                              <a href="#">Ссылка 2</a>
+                              <a href="#">Ссылка 3</a>
+                            </div>
+                          </div>
                         <li><a href="#">Контакты</a></li>
                   </div>
                   <div>
@@ -126,9 +142,9 @@
         
         <div>
           <ul class="footer_menu">
-              <li><a href="https://www.gismeteo.ru/weather-lugansk-5082/">Главная страница</a></li>
-              <li><a href="https://vk.com/miaygavmiay">Новости</a></li>
-              <li><a href="loca.html">Контакты</a></li>
+              <li><a href="#">Главная страница</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
           </ul>
           <ul class="menus">
             <li><a><fron>Мы находимся по адресу:</fron> 20А, Молодёжный квартал, Луганск 8:15-17:30</a></li>
